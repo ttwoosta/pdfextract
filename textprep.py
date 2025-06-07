@@ -39,7 +39,7 @@ for i, chunk in enumerate(chunks[:3]):
 
 
 # Generate embeddings
-embeddings = OpenAIEmbeddings(openai_api_key="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")
+embeddings = OpenAIEmbeddings()
 doc_embeddings = embeddings.embed_documents(chunks)
 
 # Store in FAISS (or another vector store)
